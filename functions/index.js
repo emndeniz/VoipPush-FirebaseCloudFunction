@@ -2,7 +2,7 @@ const functions = require('firebase-functions')
 const admin = require("firebase-admin");
 const apn = require('apn');
 
-var serviceAccount = require("./certs/app-firebase-adminsdk.json");
+var serviceAccount = require("./certs/<Firebase admin SDK json>");
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
