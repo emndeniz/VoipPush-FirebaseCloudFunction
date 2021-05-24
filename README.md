@@ -21,10 +21,6 @@ At last APNS sends voip push to UserB
 
 
 
-> **Important Note:** I am not an JavaScript nor TypeScript developer. That's why you might see index.js seems ugly.
-I am an iOS developer that needs to send Voip push and couldn't find required function code. I like to share tihs with Mobile developers such as me. 
-If anyone can suggest better implementation on js part please feel free to contact me.  
-
 ## Installation
 
 After clone this repo you need to change a few things.
@@ -128,9 +124,13 @@ If it is successfull you can make same request in iOS client using Alamofire or 
 
 
 ## Contributing
+ 
+I am not an JavaScript developer. That's why you might see index.js seems untidy.
+I am an iOS developer that needs to send Voip push and couldn't find required function code. I like to share tihs with Mobile developers such as me. 
+If anyone can suggest better implementation on js part please feel free to contact me.  
+  
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-Please make sure to update tests as appropriate.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
