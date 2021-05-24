@@ -1,6 +1,23 @@
+
 # VoipPushCloudFunction
 
 This Firebase cloud function aim to send Voip push to APNS. Without any server installation you can send voip pushes from one client to other.
+
+
+# Call Flow
+
+It is vital to understand how you this function allows you to send voip push. This section explains that flow.
+
+
+App stores devices push tokens in firestore when user launch app.  
+
+![Screen Shot 2021-05-24 at 16 40 34](https://user-images.githubusercontent.com/7477031/119356135-c461b080-bcae-11eb-83c8-d98bf8228853.png)
+
+When UserA decides to call UserB, device will trigger Firebase Cloud Function api. 
+Firebase Cloud Function retrieves push token that was previously stored and sends push request to APNS with that token.
+At last APNS sends voip push to UserB
+
+![Screen Shot 2021-05-24 at 16 43 20](https://user-images.githubusercontent.com/7477031/119356488-27534780-bcaf-11eb-8605-ca3b1d249b8f.png)
 
 
 
